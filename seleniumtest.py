@@ -8,7 +8,7 @@ options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications" : 2}
 options.add_experimental_option("prefs" , prefs)
 options.add_experimental_option("detach", True)
-driver = webdriver.Chrome(chrome_options=options, executable_path=r'/Users/macbook/Desktop/chromedriver')
+driver = webdriver.Chrome(chrome_options=options, executable_path=r'/Users/macbook/Downloads/chromedriver')
 
 driver.get("https://vi-vn.facebook.com/")
 
@@ -18,7 +18,7 @@ password = driver.find_element_by_xpath('//*[@id="pass"]')
 
 text.send_keys('ndkhanh09090901@gmail.com')
 
-password.send_keys('nothepassword')
+password.send_keys('vinhlong99')
 
 clicking = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button').click()
 
@@ -48,7 +48,7 @@ for j in cu_list:
         
         print(j)
         
-        text_box.send_keys("khanh khong co cu hehe")
+        text_box.send_keys("khanh hehehe")
         
         break
         
